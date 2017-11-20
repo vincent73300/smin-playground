@@ -18,6 +18,21 @@
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <img src="images/SW2.jpg" alt="image star wars 2" id="SW3">               
             </div>
+            <script> 
+	            var img = jQuery('#SW1').attr('alt')
+	            $("#SW1" ).mouseover(function(){
+	                console.log(img);
+	            });
+	            var img3 = jQuery('#SW3').attr('alt')
+	            $("#SW3" ).mouseover(function(){
+	                console.log(img3);
+	            });
+	            var img2 = jQuery('#SW2').attr('alt')
+	            $("#SW2" ).mouseover(function(){
+	                console.log(img2);
+	            });
+	            $.get("https://swapi.co/api/people/1/?format=json")           
+        	</script>
         </div>
 	</body>
 </html>
